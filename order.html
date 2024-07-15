@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> DRIP DISTRICT </title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="main-header">
+        <div id="logo">
+            <a href="index.html">
+                <img src="logo.png" width="300px" height="60">
+            </a>
+        </div>
+        <div id="navigation">
+            <a href="search.html"><img src="icons8-search.svg" width="30px" height="30px"></a>
+            <a href="discounts.html">DISCOUNTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="order.html"><img src="icons8-checkout-50.png" width="30px" height="30px"></a>
+        </div>
+    </div>
+
+    <div id="header1">
+        <img src="y-all-are-welcome@2x.webp" >
+    </div>
+
+    <form action="https://formsubmit.co/formsvince@gmail.com" method="POST">
+        <h2>Order Form</h2>
+        <div class="inputBox">
+            <input type="text" name="Username" required>
+            <label>Username</label>
+        </div>
+        <div class="inputBox">
+            <input type="email" name="email" required>
+            <label>Email</label>
+        </div>
+        <div class="inputBox">
+            <input type="number" name="contact" required>
+            <label>Contact no.</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="Address" required>
+            <label>Address</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="Order" required>
+            <label>Order/s:</label>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Order">
+        </div>
+        <p>Thank you for ordering!</p>
+    </form>
+
+    <script>
+        let label = document.querySelectorAll ('label').forEach(label => 
+        {label.innerHTML = label.innerText.split('').map((letters, i)=>`<span style = "transition-delay: ${i * 50}ms">${letters}</span>`).join ('');
+
+        });
+    </script>
+
+    <div id="footer">
+        <h2>All rights reserved.<br><br></h3>
+        <p style="text-align: center;">Genesis Vincent D. Adduru | genesisvince14@gmail.com</p>
+    </div>
+</div>
+
+</body>
+</html>

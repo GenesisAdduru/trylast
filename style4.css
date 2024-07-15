@@ -1,0 +1,86 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure HTML and body cover the whole viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Example font family */
+    font-size: 16px; /* Example font size */
+    line-height: 1.5;
+}
+
+/* Ensure #wrapper covers the whole page */
+#wrapper {
+    min-height: 100vh; /* Ensure wrapper covers at least viewport height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for main-header */
+#main-header {
+    background-color: #FFF; /* Example background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 300px;
+    height: 60px;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+#navigation img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* Style for discount section */
+#discount {
+    margin-top: 20px; /* Example margin top */
+    text-align: center;
+}
+
+#discount img {
+    max-width: 100%;
+}
+
+/* Style for footer */
+#footer {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
+
+#footer h2 {
+    color: black;
+}
+
+#footer p {
+    font-size: 14px;
+}
+
